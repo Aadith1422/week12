@@ -24,9 +24,6 @@
 - **NS Records:** DigitalOcean authoritative servers  
 - **TXT Record:** SPF → `v=spf1 include:zcsend.in ~all`  
 
-📌 **Screenshot Placeholder:**  
-![DNS Screenshot](evidence/dns.png)
-
 ---
 
 ## 3. Subdomains Discovered
@@ -39,17 +36,13 @@ A total of **33 subdomains** were identified. Examples include:
 - `reviewer.brototype.com`  
 - `test-app.brototype.com`  
 
-📌 **Screenshot Placeholder:**  
-![Subdomains Screenshot](evidence/subdomains.png)
-
 ---
 
 ## 4. Robots.txt & Sitemap
 - Allows most crawlers, including **AI bots (ChatGPT, Claude, Perplexity, etc.)**  
 - Sitemap available: [https://brototype.com/sitemap.xml](https://brototype.com/sitemap.xml)  
 
-📌 **Screenshot Placeholder:**  
-![Robots Screenshot](evidence/robots.png)
+
 
 ---
 
@@ -60,7 +53,7 @@ A total of **33 subdomains** were identified. Examples include:
 - **TLS Support:** TLSv1.2, TLSv1.3  
 
 📌 **Screenshot Placeholder:**  
-![Shodan Screenshot](evidence/shodan.png)
+![Shodan Screenshot](/home/aadith/Week12/OSINT_Report_brototype/evidence/Screenshot from 2025-09-14 14-49-15.png)
 
 ---
 
