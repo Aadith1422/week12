@@ -1,4 +1,4 @@
-# Log4Shell Attack (CVE-2021-44228)
+# Log4Shell Attack (CVE-2021-44228)-Technical Report
 
 A detailed explanation of the Log4Shell attack (CVE-2021-44228), broken down for clarity.
 
