@@ -33,10 +33,10 @@ Adopting IAM + PAM reduces risk from credential theft, lateral movement, insider
 ## 2. Core Concepts & Components
 
 ### 2.1 IAM Components
-- **Identity Provider (IdP):** Authenticates users and issues tokens (examples: Microsoft Entra ID, Okta, Ping Identity). citeturn0search0turn0search4
+- **Identity Provider (IdP):** Authenticates users and issues tokens (examples: Microsoft Entra ID, Okta, Ping Identity). 
 - **Access Management / SSO:** Centralized authentication to apps via SAML/OAuth/OIDC.
-- **Multi-Factor Authentication (MFA) & Passwordless:** FIDO2/WebAuthn, device-based auth, mobile authenticators. Passwordless reduces phishing risk. citeturn0search2turn0search10
-- **Identity Governance and Administration (IGA):** Access reviews, entitlements, role mining (SailPoint, Saviynt). citeturn0search3turn0search15
+- **Multi-Factor Authentication (MFA) & Passwordless:** FIDO2/WebAuthn, device-based auth, mobile authenticators. Passwordless reduces phishing risk. 
+- **Identity Governance and Administration (IGA):** Access reviews, entitlements, role mining (SailPoint, Saviynt). 
 - **Privileged Identity Lifecycle:** Tracking service accounts, machine identities, API keys.
 
 ### 2.2 PAM Components
@@ -50,8 +50,8 @@ Adopting IAM + PAM reduces risk from credential theft, lateral movement, insider
 
 ## 3. Modern Capabilities & Trends (2025)
 
-- **Passwordless & FIDO2 adoption:** Enterprises increasingly adopt FIDO2/WebAuthn for high-assurance, phishing-resistant authentication. Microsoft Entra and others have first-class support. citeturn0search2
-- **AI-driven adaptive access:** Risk scoring using behavioural signals and device telemetry to allow conditional access in real time. citeturn0search6
+- **Passwordless & FIDO2 adoption:** Enterprises increasingly adopt FIDO2/WebAuthn for high-assurance, phishing-resistant authentication. Microsoft Entra and others have first-class support. 
+- **AI-driven adaptive access:** Risk scoring using behavioural signals and device telemetry to allow conditional access in real time. 
 - **Convergence of IGA + PAM:** Unified platforms tie governance (who should have access) to runtime privileged controls.
 - **Secrets-as-code for DevOps:** Integration of PAM/secrets management into CI/CD pipelines (HashiCorp Vault, strongdm, Keeper, CyberArk Conjur).
 - **Cloud-native identity & workload identity:** Managed identity services (Azure Managed Identities, AWS IAM Roles for Service Accounts) reduce static credentials in cloud workloads.
@@ -100,13 +100,13 @@ Diagram (conceptual):
 
 **Phase 1: Core IAM (4–8 weeks)**
 - Deploy IdP (or consolidate to Entra/Okta/Ping). Enable SSO for high-value apps.
-- Roll out MFA and pilot passwordless for a controlled user group. citeturn0search2
+- Roll out MFA and pilot passwordless for a controlled user group. 
 
 **Phase 2: IGA & Provisioning (4–8 weeks)**
-- Implement IGA workflows: roles, access request/approval, access reviews (SailPoint/Saviynt recommended for enterprise IGA). citeturn0search3
+- Implement IGA workflows: roles, access request/approval, access reviews (SailPoint/Saviynt recommended for enterprise IGA). 
 
 **Phase 3: PAM & Secrets (4–12 weeks)**
-- Install PAM vault, onboard critical admin accounts, enforce password rotation, enable session recording (CyberArk, Delinea, BeyondTrust, StrongDM, KeeperPAM examples). citeturn0search5turn0search9
+- Install PAM vault, onboard critical admin accounts, enforce password rotation, enable session recording (CyberArk, Delinea, BeyondTrust, StrongDM, KeeperPAM examples). 
 - Integrate secrets management into CI/CD (HashiCorp Vault or cloud provider vaults).
 
 **Phase 4: Harden & Optimize (ongoing)**
@@ -120,19 +120,19 @@ Diagram (conceptual):
 > Selection should be based on environment (Microsoft-heavy vs heterogeneous), regulatory needs, cloud footprint, and budget.
 
 ### IAM / IdP & Access Management
-- **Microsoft Entra ID (Azure AD):** Strong integration for Microsoft 365/Azure; mature passwordless support and conditional access. Good for Microsoft-centric shops. citeturn0search2turn0search0
-- **Okta:** Vendor-neutral, cloud-first IdP with broad app integrations and developer APIs. Strong SSO and lifecycle capabilities. citeturn0search4
-- **Ping Identity:** Good for complex enterprise SSO and federation scenarios. citeturn0search0
+- **Microsoft Entra ID (Azure AD):** Strong integration for Microsoft 365/Azure; mature passwordless support and conditional access. Good for Microsoft-centric shops. 
+- **Okta:** Vendor-neutral, cloud-first IdP with broad app integrations and developer APIs. Strong SSO and lifecycle capabilities. 
+- **Ping Identity:** Good for complex enterprise SSO and federation scenarios. 
 
 ### IGA (Identity Governance & Administration)
-- **SailPoint:** Market leader for IGA, role mining, and compliance automation. citeturn0search3turn0search15
-- **Saviynt:** Cloud-native IGA with good SaaS and entitlement coverage. citeturn0search3turn0search11
+- **SailPoint:** Market leader for IGA, role mining, and compliance automation. 
+- **Saviynt:** Cloud-native IGA with good SaaS and entitlement coverage. 
 
 ### PAM & Secrets
 - **CyberArk:** Enterprise-grade PAM with vaulting, session monitoring, and broad integrations.
 - **Delinea (Thycotic/Centrify):** User-friendly PAM suite with strong privileged account lifecycle features.
 - **BeyondTrust:** Strong EPM and PAM combined offering.
-- **StrongDM / KeeperPAM / HashiCorp Vault:** Emerging and cloud-friendly options for secret management and access brokering. HashiCorp Vault is popular for DevOps secrets management. citeturn0search5turn0search9
+- **StrongDM / KeeperPAM / HashiCorp Vault:** Emerging and cloud-friendly options for secret management and access brokering. HashiCorp Vault is popular for DevOps secrets management. 
 
 ---
 
@@ -192,10 +192,6 @@ Costs include software licenses (IdP, IGA, PAM), professional services for integ
 
 ---
 
-## References & Sources
-- Microsoft Entra documentation: passwordless & conditional access. citeturn0search2
-- Market overviews and vendor leaderboards for IAM/PAM/IGA (2025). citeturn0search0turn0search1turn0search3
-- Zero Trust and identity trends (2025). citeturn0search6
 
 ---
 
